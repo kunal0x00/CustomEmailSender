@@ -67,7 +67,7 @@ def main():
             return
 
         # Replace placeholder and send the email
-        email_body = draft_mail.replace("<enter company name>", company_name)
+        email_body = draft_mail.replace("<enter company name>", company_name)  # here <enter company name> is a placeholder you can change as per your convenience
         send_email(service, "yourEmail@gmail.com", receiver_emails, f"Application for Internship at {company_name}", email_body, attachment_paths)
     else:
         print("Token not found. Please run the authentication script first.")
