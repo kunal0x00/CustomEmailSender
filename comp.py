@@ -84,7 +84,7 @@ def main():
             email_body = draft_mail.replace("<enter company name>", placeholders[i])
             attachment_path = attachment_paths[i] if attachment_paths and len(attachment_paths) > 1 else attachment_paths[0] if attachment_paths else None
             print(f"Sending email to: {receiver_email} with placeholder: {placeholders[i]} and attachment: {attachment_path}")
-            send_email(service, "yourEmail@gmail.com", receiver_email, f"Application for Internship at {placeholders[i]}", email_body, attachment_path)
+            send_email(service, "yourEmail@gmail.com", receiver_email, f"Application for Internship at {placeholders[i]}", email_body, attachment_path)#this line is for Subject of email, no need to change the yourEmail@gmail.com
     else:
         print("Token not found. Please run the authentication script first.")
 
