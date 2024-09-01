@@ -6,13 +6,13 @@ This script is designed to automate the process of sending personalized emails. 
 
 - **Placeholder Replacement:** Replace placeholder text like `<enter company name>` in your email draft with actual values you provide.
 - **Multiple Recipients:** Send personalized emails to multiple recipients simultaneously.
-- **Multiple Attachments:** Attach multiple PDF files to your emails.
+- **Multiple Attachments:** Attach multiple files (PDFs, DOCX, etc.) to your emails, with the option to send different files to each recipient or the same file to all.
 
 ## How It Works
 
 1. **Prepare Your Email Draft:** Create a draft email with placeholders for dynamic content.
 2. **Provide Recipient Details:** Enter the email addresses of recipients and the company name or other specific details.
-3. **Attach Files:** Optionally, attach multiple PDF files to your emails.
+3. **Attach Files:** Optionally, attach multiple files to your emails. If one file is provided, it will be sent to all recipients. If multiple files are provided, each file will be sent to the corresponding recipient.
 4. **Send Emails:** The script sends the customized email to each recipient with the specified attachments.
 
 This script is ideal for sending out personalized messages where certain details need to be tailored for each recipient.
@@ -63,13 +63,3 @@ The `credentials.json` file will look something like this:
     ]
   }
 }
-
-### New Feature: Multiple Attachments
-
-This script now supports sending multiple attachments, allowing you to specify a different file for each recipient.
-
-- **Single Attachment:** If only one file is provided, it will be sent to all recipients.
-- **Multiple Attachments:** If the number of files matches the number of email addresses, each email will receive the corresponding file. For example, if you send emails to three addresses and provide three files, each recipient will receive their respective file.
-
-To use this feature, simply provide the paths to the files as a comma-separated list when prompted.
-
