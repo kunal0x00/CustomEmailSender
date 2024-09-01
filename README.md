@@ -63,3 +63,13 @@ The `credentials.json` file will look something like this:
     ]
   }
 }
+
+### New Feature: Multiple Attachments
+
+This script now supports sending multiple attachments, allowing you to specify a different file for each recipient.
+
+- **Single Attachment:** If only one file is provided, it will be sent to all recipients.
+- **Multiple Attachments:** If the number of files matches the number of email addresses, each email will receive the corresponding file. For example, if you send emails to three addresses and provide three files, each recipient will receive their respective file.
+
+To use this feature, simply provide the paths to the files as a comma-separated list when prompted.
+
